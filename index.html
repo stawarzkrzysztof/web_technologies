@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Stronka na zaliczenie" />
+		<meta name="author" content="Krzysztof Stawarz" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/561a26fcbb.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="js/password_handler.js"></script>
+		<title>Wpisz hasło, aby wejść</title>
+	</head>
+	<body>
+		<div id="pass" class="center">
+			<form onsubmit="return passwordChecker()">
+				<input
+					id="password_input"
+					class="password"
+					type="password"
+					placeholder="Tutaj wpisz hasło."
+					value=""
+				/>
+				<span class="eye" onclick="showOrHidePassword()"
+					><i id="hide1" class="fa-solid fa-eye"></i>
+					<i id="hide2" class="fa-solid fa-eye-slash"></i
+				></span>
+				<br />
+				<span id="message"> </span>
+				<br />
+				<input
+					id="password_button"
+					class="button"
+					type="submit"
+					value="Enter"
+				/>
+				<input class="button" type="reset" />
+			</form>
+		</div>
+	</body>
+</html>

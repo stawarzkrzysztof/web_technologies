@@ -1,0 +1,184 @@
+* {
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter",
+		"Lucida Typewriter", monospace;
+}
+body {
+	background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.center {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	height: fit-content;
+	width: fit-content;
+}
+
+.password {
+	margin: 4px;
+	margin-top: 10px;
+}
+
+.eye {
+	position: fixed;
+	top: 15%;
+}
+
+#hide1 {
+	display: none;
+}
+
+.button {
+	margin-top: 4px;
+	cursor: pointer;
+}
+
+.main_page {
+	background-color: white;
+	border: 3px solid black;
+	padding: 50px;
+	text-align: left;
+	font-size: larger;
+	height: fit-content;
+	width: fit-content;
+}
+
+.progress_bar_place {
+	position: relative;
+	transform: translate(-50%, 0%);
+	left: 50%;
+	height: 35px;
+	width: 500px;
+	border: 1px solid black;
+	border-radius: 7px;
+	margin-top: 10px;
+}
+
+.progress_bar {
+	position: absolute;
+	height: 100%;
+	background-image: linear-gradient(
+		90deg,
+		rgba(255, 0, 0, 1) 0%,
+		rgba(255, 154, 0, 1) 10%,
+		rgba(208, 222, 33, 1) 20%,
+		rgba(79, 220, 74, 1) 30%,
+		rgba(63, 218, 216, 1) 40%,
+		rgba(47, 201, 226, 1) 50%,
+		rgba(28, 127, 238, 1) 60%,
+		rgba(95, 21, 242, 1) 70%,
+		rgba(186, 12, 248, 1) 80%,
+		rgba(251, 7, 217, 1) 90%,
+		rgba(255, 0, 0, 1) 100%
+	);
+	border-radius: 7px;
+}
+
+@keyframes progress_animation {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+#play_animation {
+	animation: progress_animation 3s forwards;
+}
+
+#pass {
+	text-align: center;
+}
+
+.list_elements {
+	padding: 10px;
+}
+
+.list_elements:hover {
+	font-weight: bold;
+	font-size: 1.15em;
+	padding: 8px;
+}
+
+#pope {
+	list-style-type: "\1F552";
+}
+
+#pope:hover {
+	color: lightgray;
+	cursor: pointer;
+}
+
+#calc {
+	list-style-type: "\1F9EE";
+}
+
+#calc:hover {
+	color: lightsalmon;
+	cursor: pointer;
+}
+
+#puppies {
+	list-style-type: "\1F436";
+}
+
+#puppies:hover {
+	color: darkgoldenrod;
+	cursor: pointer;
+}
+
+#capybara {
+	list-style-type: "\1F439";
+}
+
+#capybara:hover {
+	color: hotpink;
+	cursor: pointer;
+}
+
+#rainbow {
+	list-style-type: "\1F308";
+}
+
+#rainbow:hover {
+	color: chartreuse;
+	cursor: pointer;
+}
+
+#grade {
+	list-style-type: "\1F393";
+}
+
+#grade:hover {
+	color: lightskyblue;
+	cursor: pointer;
+}
+
+#kapibarka {
+	width: 68vw;
+}
+
+.upload_button {
+	position: absolute;
+	margin-top: 10px;
+	transform: translate(-50%, 0%);
+	left: 50%;
+}
+
+#start_animation {
+	animation: progress_animation 5s infinite;
+}
+
+#button_container {
+	height: fit-content;
+	padding: 10px;
+}
+
+#rainbow_progress_bar_text {
+	margin-bottom: 50px;
+	text-align: center;
+}
